@@ -1,0 +1,34 @@
+﻿.hide{
+    display: none;
+}
+
+img{
+    width: 98%;
+}
+body, html{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial;
+    background: url('img/bg.png') repeat green;
+    overflow: hidden; /* This will hide the extra canvas if the screen is small */
+}
+
+#btnLeftSwipeHandle{
+    position: fixed;
+    top: 70%;
+    left: -20px;
+    background-color: blue;
+    height: 5%;
+}
+#btnRightSwipeHandle{
+    position: fixed;
+    top: 70%;
+    right: -20px;
+    background-color: blue;
+    height: 5%;
+}
+
+#txtMilestoneNote{
+    width: 95%;
+}

@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>EPi log</title>
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+
+    <script type="text/javascript" src="js/CONFIG.js"></script>
+    <script src="js/MAIN.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta charset="utf-8" />
+
+    <link href="asset/MAIN.css" rel="stylesheet" />
+</head>
+<body>
+
+    <header>
+        <h3 title="click to turn on off">
+            GPS status: <span id="lblGpsStatus" title="green for OK, yellow for Trying, Red for Off">OK</span>
+        </h3>
+    </header>
+
+    <div id="main">
+        <div id="">
+            <label>Project</label><input type="text" value="Y Tý" />
+        </div>
+
+        <div>
+            <a href="trackingview.html"> <button id="btnTrackingRoute">Tracking view</button></a> <button>Turn on trackingview</button>
+        </div>
+
+        <fieldset style="background-color: greenyellow">
+            <legend>Create milestone</legend>
+            
+            <div id="lblAudioNote" style="display: none;"><span> This is Audio Note of this milestone >>> </span> <span id="btnCancelAudioNode" title="btnCancelAudioNode"> x </span></div>
+
+            <div id="lblPhotoNote" style="display: none;">
+                <div style="max-height: 100px"> <img src="asset/img/pickphotointent.jpg" style="max-height: 100px; max-width: 100px" /> </div> <span id="btnCancelPhotoNode" title="btnCancelPhotoNode"> x </span>
+            </div>
+
+            <input id="txtMilestoneNote" type="text" placeholder="enter note here"/>
+            <br />
+            <button id="btnAddVoice">Add Voice</button><button id="btnAddPhoto">Add Photo</button>
+        </fieldset>
+
+    </div>
+
+    <footer>
+        <div id="message">MESSAGE</div>
+
+        <div id="mockpickphotointent" style="display: none">
+            <img src="asset/img/pickphotointent.jpg" />
+        </div>
+
+        <fieldset>
+            <legend>Menu
+            </legend>
+            <ul>
+                <li><a href="projectlist.html">Project list</a></li>
+                <li><a href="projectcreate.html">Create new project</a></li>
+                <li><a href="setting.html">setting</a></li>
+                <li><a href="help.html">Help</a></li>
+            </ul>
+        </fieldset>
+
+        <div id="btnLeftSwipeHandle" title="swipe to see MapView">L Swipe</div>
+        <div id="btnRightSwipeHandle" title="swipe to see current ProjectView">R Swipe</div>
+
+        <div>
+            <a href="readme.html">readme</a>
+        </div>
+    </footer>
+
+</body>
+</html>
